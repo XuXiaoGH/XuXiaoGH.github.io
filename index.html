@@ -3,12 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Xu.Xiao's GitHub Page</title>
+      <link href="http://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
     <style>
         .list{
           width: 500px;
           height: auto;
           margin: 0 auto;
           margin-top: 50px;
+        }
+        .item{
+          width: 400px;
+          height: auto;
+          border:2px solid #42b983;
+          padding-left: 10px;
+          border-radius: 3px;
+          margin-top: 40px;
+            transform: background 1s;
+            -webkit-transition: background 1s , border 1s;
+        }
+        .item:hover{
+            background: #fafafa;
+            -moz-box-shadow: 10px 10px 5px #b4b4b4; /* 老的 Firefox */
+            box-shadow: 10px 10px 5px #b4b4b4;
         }
         .articlescrap{
           color:#42b983;
@@ -24,17 +40,33 @@
           margin-left: 30px;
           text-decoration:none;
         }
+        h1{
+          color:#42b983;
+          width: 500px;
+          height: auto;
+          margin: 80px auto;
+
+        }
     </style>
   </head>
   <body>
+      <h1> Xu.Xiao's GitHub Page </h1>
       <div class="list">
         <div class="item">
           <p class="articlescrap">1. Vue2.0探索之路——vuex入门教程和思考</p>
           <p class="demoUrl"><a href="https://github.com/XuXiaoGH/vuex-test">Demo地址</a></p>
-          <p class="demoLook"><a href="">Demo预览</a></p>
+          <p class="demoLook"><a href="http://jyzhd.cc/dist/vuex/index.html">Demo预览</a></p>
         </div>
 
+
+
       </div>
+      <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+      <script>
+          $(function(){
+              $('.item').addClass('animated zoomIn');
+          })
+      </script>
   </body>
 </html>
 
